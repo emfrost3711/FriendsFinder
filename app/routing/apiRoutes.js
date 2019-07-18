@@ -5,7 +5,7 @@
 
 
 var friends = require("../data/friends");
-var responses = require("../data/responses");
+
 
 module.exports = function(app) {
     app.get("/api/friends", function(req, res) {
@@ -13,39 +13,53 @@ module.exports = function(app) {
     });
 
     app.post("/api/friends/:friend", function(req, res) {
-        responses.push(req.body);
-        var friend = req.params.friend
+        friends.push(req.body);
+        var user = req.params.friend;
+        var totalDifference = 0; 
+        friends.forEach (function (friend) {
+            var userScores = user.scores;
+            var friendsScores = friend.scores; 
+            var scoreDifferences = [];
+            for (var i = 0; i < friend.scores.length; i++) {
+                var tempNum = (user.scores[i] - friend.scores[i]);
+                scoreDifferences.push(tempNum);
+            }
+            scoreDifferences.reduce(function (total, currentValue) {
+                return (total + currentValue)
+            })
+        })
+        //need to compare the total difference with something else to determine 
         res.send(true);
     })
 };  
 
 
-  // Displays a single character, or returns false
-  app.get("/api/characters/:character", function(req, res) {
-    var chosen = req.params.character;
+//   // Displays a single character, or returns false
+//   app.get("/api/characters/:character", function(req, res) {
+//     var chosen = req.params.character;
   
-    console.log(chosen);
+//     console.log(chosen);
   
-    for (var i = 0; i < characters.length; i++) {
-      if (chosen === characters[i].routeName) {
-        return res.json(characters[i]);
-      }
-    }
+//     for (var i = 0; i < characters.length; i++) {
+//       if (chosen === characters[i].routeName) {
+//         return res.json(characters[i]);
+//       }
+//     }
   
-    return res.json(false);
-  });
+//     return res.json(false);
+//   });
   
-  // Create New Characters - takes in JSON input
-  app.post("/api/characters", function(req, res) {
-    // req.body hosts is equal to the JSON post sent from the user
-    // This works because of our body parsing middleware
-    var newcharacter = req.body;
+//   // Create New Characters - takes in JSON input
+//   app.post("/api/characters", function(req, res) {
+//     // req.body hosts is equal to the JSON post sent from the user
+//     // This works because of our body parsing middleware
+//     var newcharacter = req.body;
   
-    console.log(newcharacter);
+//     console.log(newcharacter);
   
-    // We then add the json the user sent to the character array
-    characters.push(newcharacter);
+//     // We then add the json the user sent to the character array
+//     characters.push(newcharacter);
   
-    // We then display the JSON to the users
-    res.json(newcharacter);
-  });
+//     // We then display the JSON to the users
+//     res.json(newcharacter);
+//   });
