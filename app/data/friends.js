@@ -1,11 +1,9 @@
 
-//You should save your application's data inside of `app/data/friends.js` as an array of objects. Each of these objects should roughly follow the format below.
-
 var friends = [
 
 {
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "name":"Annabelle",
+  "photo":"images/allef-vinicius-6ypOmTNK2FA-unsplash.jpg",
   "scores":[
       5,
       1,
@@ -19,8 +17,8 @@ var friends = [
       1
     ]
 },
-{"name":"string1",
-"photo":"",
+{"name":"Joyce",
+"photo":"images/averie-woodard-4nulm-JUYFo-unsplash.jpg",
 "scores": [
     4,
     2,
@@ -34,8 +32,8 @@ var friends = [
     1,
 ]
 }, 
-{"name":"string2",
-"photo":"",
+{"name":"TJ",
+"photo":"images/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg",
 "scores": [
     1,
     2,
@@ -48,8 +46,8 @@ var friends = [
     2,
     3,
 ]},
-{"name":"string3",
-"photo":"",
+{"name":"Paul",
+"photo":"images/brooke-cagle-wKOKidNT14w-unsplash.jpg",
 "scores": [
     3,
     3,
@@ -62,8 +60,8 @@ var friends = [
     2,
     1,
 ]},
-{"name":"string4",
-"photo":"",
+{"name":"Mac",
+"photo":"images/brooke-cagle-wKOKidNT14w-unsplash.jpg",
 "scores": [
     2,
     3,
@@ -76,8 +74,8 @@ var friends = [
     3,
     3,
 ]},
-{"name":"string5",
-"photo":"",
+{"name":"Jenny",
+"photo":"images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
 "scores": [
     1,
     2,
@@ -90,8 +88,8 @@ var friends = [
     2,
     3,
 ]},
-{"name":"string6",
-"photo":"",
+{"name":"Misha",
+"photo":"images/eli-defaria-pOODuHYyla0-unsplash.jpg",
 "scores": [
     4,
     2,
@@ -104,8 +102,8 @@ var friends = [
     3,
     4,
 ]},
-{"name":"string7",
-"photo":"",
+{"name":"Ebony",
+"photo":"images/eye-for-ebony-vYpbBtkDhNE-unsplash.jpg",
 "scores": [
     4,
     1,
@@ -118,8 +116,8 @@ var friends = [
     1,
     3,
 ]},
-{"name":"string8",
-"photo":"",
+{"name":"Matteo",
+"photo":"images/harps-joseph-tAvpDE7fXgY-unsplash.jpg",
 "scores": [
     3,
     4,
@@ -132,8 +130,8 @@ var friends = [
     2,
     5,
 ]}, 
-{"name":"string9",
-"photo":"",
+{"name":"Sam",
+"photo":"images/marius-ciocirlan-vMV6r4VRhJ8-unsplash.jpg",
 "scores": [
     1,
     2,
@@ -146,8 +144,8 @@ var friends = [
     4,
     3,
 ]},
-{"name":"string10",
-"photo":"",
+{"name":"Sarah",
+"photo":"images/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg",
 "scores": [
     3,
     1,
